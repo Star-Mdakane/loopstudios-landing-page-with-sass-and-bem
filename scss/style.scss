@@ -1,68 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import "./base";
+@import "./helpers";
+@import "./mobile";
+@import "./tablet";
+@import "./variables";
+@import "./utilities";
 
-$font-stack-alata: "Alata", sans-serif;
-$font-stack-josefin: "Josefin Sans", sans-serif;
 
-$white: #fff;
-$black: #000;
-$grey: rgb(216 216 216);
-$blue-50: rgb(246 250 255);
-$blue-100: rgb(229 234 241);
-$gradient: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 0.6));
 
 @function px-to-rem ($px) {
     @return $px / 16 * 1rem;
 }
 
-.text-1 {
-    font-family: $font-stack-josefin;
-    font-size: px-to-rem(72);
-    line-height: 100%;
-    font-weight: 300;
-}
 
-.text-2 {
-    font-family: $font-stack-josefin;
-    font-size: px-to-rem(48);
-    line-height: 100%;
-    font-weight: 300;
-}
 
-.text-3 {
-    font-family: $font-stack-josefin;
-    font-size: px-to-rem(40);
-    line-height: 100%;
-    font-weight: 300;
-}
 
-.text-4 {
-    font-family: $font-stack-josefin;
-    font-size: px-to-rem(32);
-    line-height: 100%;
-    font-weight: 300;
-}
-
-.text-5 {
-    font-family: $font-stack-josefin;
-    font-size: px-to-rem(24);
-    line-height: 100%;
-    font-weight: 300;
-}
-
-.text-6 {
-    font-family: $font-stack-alata;
-    font-size: px-to-rem(15);
-    line-height: 165%;
-    font-weight: 400;
-}
-
-.text-7 {
-    font-family: $font-stack-alata;
-    font-size: px-to-rem(14);
-    line-height: 100%;
-    letter-spacing: px-to-rem(5);
-    font-weight: 400;
-}
 
 body {
     letter-spacing: px-to-rem(0);
