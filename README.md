@@ -48,6 +48,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - I will make use of desktop fisrt workflow becase of the complications of structure
 - Getting the feel of Sass, powerfull but a lot of depracated wwarning, which will make it less interesting.
 - No one told me that the order of import was very important.
+- Again made the mistake of display none on transition, I need to learn.
 
 ### Built with
 
