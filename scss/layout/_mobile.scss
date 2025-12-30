@@ -6,6 +6,7 @@
         height: px-to-rem(650);
         background-image: url("../images/mobile/image-hero.jpg");
         padding: 2.5rem 1.5;
+        min-width: px-to-rem(375);
     }
 
     .hero-wrapper {
@@ -15,7 +16,6 @@
         flex-direction: column;
         justify-content: space-between;
         margin: 0 auto;
-        background-color: aqua;
         transform: translateY(-4rem);
     }
 
@@ -28,6 +28,19 @@
         display: block;
         width: px-to-rem(24);
         height: px-to-rem(16);
+    }
+
+    .hero__title-container {
+        height: fit-content;
+        max-width: 100%;
+        border: 2px solid white;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+
+    .burger-menu-wrapper {
+        height: px-to-rem(399);
     }
 
 

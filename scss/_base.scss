@@ -32,7 +32,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     margin: 0 auto;
-    background-color: black;
+    // background-color: black;
 }
 
 .hero {
@@ -63,8 +63,12 @@ body {
 }
 
 .hero__title-container {
-    max-height: px-to-rem(278);
-    width: 58.56%;
+    height: px-to-rem(278);
+    width: px-to-rem(650);
     border: 2px solid white;
     padding: 2.5rem;
+}
+
+.burger-menu {
+    opacity: 0;
 }

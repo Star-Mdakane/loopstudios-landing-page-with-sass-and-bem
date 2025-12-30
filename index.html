@@ -7,43 +7,46 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/css/style.css">
+  <script src="script.js" defer></script>
   <title>Frontend Mentor | Loopstudios landing page</title>
 </head>
 
 <body>
   <section class="hero">
-    <div class="hero__burger-menu burger-menu" hidden>
-      <div class="burger-menu__header">
-        <img src="./images/logo.svg" alt="logo" class="header__logo">
-        <img src="./images/icon-close.svg" alt="close menu" class="burger-menu__close-image">
+    <div class="hero__burger-menu burger-menu" id="burger-menu">
+      <div class="burger-menu-wrapper">
+        <div class="burger-menu__header">
+          <img src="./images/logo.svg" alt="logo" class="header__logo">
+          <img src="./images/icon-close.svg" alt="close menu" class="burger-menu__close-image" id="close-burger">
+        </div>
+        <ul class="burger-menu__list">
+          <li class="burger-menu__item">
+            <a href="" class="text-5">
+              About
+            </a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="" class="text-5">
+              Careers
+            </a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="" class="text-5">
+              Events
+            </a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="" class="text-5">
+              Products
+            </a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="" class="text-5">
+              Support
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="burger-menu__list">
-        <li class="burger-menu__item">
-          <a href="" class="text-5">
-            About
-          </a>
-        </li>
-        <li class="burger-menu__item">
-          <a href="" class="text-5">
-            Careers
-          </a>
-        </li>
-        <li class="burger-menu__item">
-          <a href="" class="text-5">
-            Events
-          </a>
-        </li>
-        <li class="burger-menu__item">
-          <a href="" class="text-5">
-            Products
-          </a>
-        </li>
-        <li class="burger-menu__item">
-          <a href="" class="text-5">
-            Support
-          </a>
-        </li>
-      </ul>
     </div>
     <div class="hero-wrapper">
       <header class="hero-header header">
@@ -76,7 +79,7 @@
           </li>
         </ul>
         <div class="hero__burger" aria-label="Toggle menu">
-          <img src="./images/icon-hamburger.svg" alt="burger menu">
+          <img src="./images/icon-hamburger.svg" alt="burger menu" id="burger">
         </div>
       </header>
       <div class="hero__title-container">

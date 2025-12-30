@@ -215,7 +215,6 @@ body {
   width: 100vw;
   min-height: 100vh;
   margin: 0 auto;
-  background-color: black;
 }
 
 .hero {
@@ -243,10 +242,14 @@ body {
 }
 
 .hero__title-container {
-  max-height: 17.375rem;
-  width: 58.56%;
+  height: 17.375rem;
+  width: 40.625rem;
   border: 2px solid white;
   padding: 2.5rem;
+}
+
+.burger-menu {
+  opacity: 0;
 }
 
 .header {
@@ -281,13 +284,14 @@ body {
 
 .hero__burger {
   display: none;
+  cursor: pointer;
 }
 
 .hero__title {
   color: #fff;
 }
 
-@media (max-width: 45rem) {
+@media (max-width: 48rem) {
   .hero {
     width: 100%;
     height: 40.625rem;
@@ -301,7 +305,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
-    background-color: aqua;
     transform: translateY(0rem);
   }
   .header__list {
@@ -312,6 +315,72 @@ body {
     width: 2rem;
     height: 1.333125rem;
   }
+  .hero__title-container {
+    height: fit-content;
+    max-width: 100%;
+    border: 2px solid white;
+    padding: 2rem;
+  }
+  .burger-menu.open {
+    display: flex;
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  .burger-menu {
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .burger-menu-wrapper {
+    margin: 5rem 5rem 0;
+    width: 100%;
+    height: 23.4375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .burger-menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .burger-menu__close-image {
+    width: 1.531875rem;
+    height: 1.531875rem;
+    cursor: pointer;
+  }
+  .burger-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .burger-menu__list a {
+    color: #fff;
+  }
+}
+@media (max-width: 42.375rem) {
+  .text-1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+    line-height: 100%;
+    font-weight: 300;
+  }
+  .hero__title-container {
+    height: fit-content;
+    max-width: 100%;
+    border: 2px solid white;
+    padding: 2rem;
+    margin-bottom: 6rem;
+    text-align: center;
+  }
 }
 @media (max-width: 31.25rem) {
   .hero {
@@ -319,6 +388,7 @@ body {
     height: 40.625rem;
     background-image: url("../images/mobile/image-hero.jpg");
     padding: 2.5rem 1.5;
+    min-width: 23.4375rem;
   }
   .hero-wrapper {
     width: 80%;
@@ -327,7 +397,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
-    background-color: aqua;
     transform: translateY(-4rem);
   }
   .header__logo {
@@ -338,6 +407,17 @@ body {
     display: block;
     width: 1.5rem;
     height: 1rem;
+  }
+  .hero__title-container {
+    height: fit-content;
+    max-width: 100%;
+    border: 2px solid white;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+  .burger-menu-wrapper {
+    height: 24.9375rem;
   }
   .text-1 {
     font-family: "Josefin Sans", sans-serif;
