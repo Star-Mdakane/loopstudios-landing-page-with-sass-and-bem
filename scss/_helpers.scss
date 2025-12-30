@@ -1,3 +1,44 @@
-@function px-to-rem ($px) {
+//convert pixels to rem units
+@function px-to-rem($px) {
     @return $px / 16 * 1rem;
+}
+
+// Margins and padding
+$spaces: 1 2 3 4 5;
+
+@each $space in $spaces {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+
+    .px-#{$space} {
+        padding: 0 #{$space}rem;
+    }
+}
+
+%bottom {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: white;
 }

@@ -1,0 +1,41 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 12rem;
+    height: 2rem;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    a {
+        color: $white;
+        display: inline-block;
+        padding-bottom: 0.5rem;
+        position: relative;
+    }
+
+    a::after {
+        @extend %bottom;
+        transition: width 0.3s ease;
+    }
+
+    a:hover::after {
+        width: 50%;
+    }
+}
+
+.hero__burger {
+    display: none;
+}
+
+.hero__title {
+    color: $white;
+}

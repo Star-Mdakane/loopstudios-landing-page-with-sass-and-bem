@@ -1,0 +1,31 @@
+@media(max-width: px-to-rem(720)) {
+
+    //    tablet
+    .hero {
+        width: 100%;
+        height: px-to-rem(650);
+        background-image: url("../images/mobile/image-hero.jpg");
+        padding: 4rem 0;
+    }
+
+    .hero-wrapper {
+        width: 80%;
+        height: px-to-rem(440);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+        background-color: aqua;
+        transform: translateY(0rem);
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .hero__burger {
+        display: block;
+        width: px-to-rem(32);
+        height: px-to-rem(21.33);
+    }
+}

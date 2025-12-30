@@ -1,7 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+body {
+    max-width: px-to-rem(1440);
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.hero {
+    width: 100%;
+    height: px-to-rem(650);
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.hero-wrapper {
+    max-width: px-to-rem(1110);
+    width: 77%;
+    height: px-to-rem(440);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    transform: translateY(-3rem);
+}
+
+.hero__title-container {
+    max-height: px-to-rem(278);
+    width: 58.56%;
+    border: 2px solid white;
+    padding: 2.5rem;
 }

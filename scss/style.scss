@@ -1,20 +1,8 @@
-@import "./base";
-@import "./helpers";
-@import "./mobile";
-@import "./tablet";
 @import "./variables";
+@import "./helpers";
 @import "./utilities";
-
-
-
-@function px-to-rem ($px) {
-    @return $px / 16 * 1rem;
-}
-
-
-
-
-
-body {
-    letter-spacing: px-to-rem(0);
-}
+@import "./base";
+@import "./layout/header";
+@import "./layout/tablet";
+@import "./layout/mobile";
+@import "./layout/footer";

@@ -1,10 +1,353 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.mx-2 {
+  margin: 0 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.mx-4 {
+  margin: 0 4rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.px-4 {
+  padding: 0 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.mx-5 {
+  margin: 0 5rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.px-5 {
+  padding: 0 5rem;
+}
+
+.header__list a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: white;
+}
+
+.text-1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4.5rem;
+  line-height: 100%;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.text-2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  line-height: 100%;
+  font-weight: 300;
+}
+
+.text-3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  line-height: 100%;
+  font-weight: 300;
+}
+
+.text-4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 100%;
+  font-weight: 300;
+}
+
+.text-5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 100%;
+  font-weight: 300;
+}
+
+.text-6 {
+  font-family: "Alata", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 165%;
+  font-weight: 400;
+}
+
+.text-7 {
+  font-family: "Alata", sans-serif;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 0.3125rem;
+  font-weight: 400;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
 body {
-  letter-spacing: 0rem;
+  max-width: 90rem;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.hero {
+  width: 100%;
+  height: 40.625rem;
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-wrapper {
+  max-width: 69.375rem;
+  width: 77%;
+  height: 27.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  transform: translateY(-3rem);
+}
+
+.hero__title-container {
+  max-height: 17.375rem;
+  width: 58.56%;
+  border: 2px solid white;
+  padding: 2.5rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 12rem;
+  height: 2rem;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header__list a {
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+.header__list a::after {
+  transition: width 0.3s ease;
+}
+.header__list a:hover::after {
+  width: 50%;
+}
+
+.hero__burger {
+  display: none;
+}
+
+.hero__title {
+  color: #fff;
+}
+
+@media (max-width: 45rem) {
+  .hero {
+    width: 100%;
+    height: 40.625rem;
+    background-image: url("../images/mobile/image-hero.jpg");
+    padding: 4rem 0;
+  }
+  .hero-wrapper {
+    width: 80%;
+    height: 27.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: aqua;
+    transform: translateY(0rem);
+  }
+  .header__list {
+    display: none;
+  }
+  .hero__burger {
+    display: block;
+    width: 2rem;
+    height: 1.333125rem;
+  }
+}
+@media (max-width: 31.25rem) {
+  .hero {
+    width: 100%;
+    height: 40.625rem;
+    background-image: url("../images/mobile/image-hero.jpg");
+    padding: 2.5rem 1.5;
+  }
+  .hero-wrapper {
+    width: 80%;
+    height: 23.9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: aqua;
+    transform: translateY(-4rem);
+  }
+  .header__logo {
+    width: 9rem;
+    height: 1.5rem;
+  }
+  .hero__burger {
+    display: block;
+    width: 1.5rem;
+    height: 1rem;
+  }
+  .text-1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.5rem;
+    line-height: 100%;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+.footer__item {
+  width: 1.5rem;
+  height: 1.5rem;
 }

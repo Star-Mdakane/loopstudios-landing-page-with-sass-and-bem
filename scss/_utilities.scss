@@ -1,0 +1,51 @@
+//Font styles
+.text-1 {
+    font-family: $font-stack-josefin;
+    font-size: px-to-rem(72);
+    line-height: 100%;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.text-2 {
+    font-family: $font-stack-josefin;
+    font-size: px-to-rem(48);
+    line-height: 100%;
+    font-weight: 300;
+}
+
+.text-3 {
+    font-family: $font-stack-josefin;
+    font-size: px-to-rem(40);
+    line-height: 100%;
+    font-weight: 300;
+}
+
+.text-4 {
+    font-family: $font-stack-josefin;
+    font-size: px-to-rem(32);
+    line-height: 100%;
+    font-weight: 300;
+}
+
+.text-5 {
+    font-family: $font-stack-josefin;
+    font-size: px-to-rem(24);
+    line-height: 100%;
+    font-weight: 300;
+}
+
+.text-6 {
+    font-family: $font-stack-alata;
+    font-size: px-to-rem(15);
+    line-height: 165%;
+    font-weight: 400;
+}
+
+.text-7 {
+    font-family: $font-stack-alata;
+    font-size: px-to-rem(14);
+    line-height: 100%;
+    letter-spacing: px-to-rem(5);
+    font-weight: 400;
+}
