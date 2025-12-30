@@ -58,4 +58,11 @@
         font-weight: 300;
         text-transform: uppercase;
     }
+
+    .text-2 {
+        font-family: $font-stack-josefin;
+        font-size: px-to-rem(32);
+        line-height: 100%;
+        font-weight: 300;
+    }
 }

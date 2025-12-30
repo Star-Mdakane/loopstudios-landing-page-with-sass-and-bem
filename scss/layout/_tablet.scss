@@ -94,6 +94,41 @@
         // padding: px-to-rem(100) px-to-rem(80);
         @include flex-padding(100, 80);
     }
+
+    .about-wrapper {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        height: px-to-rem(527);
+        gap: px-to-rem(48);
+        // height: px-to-rem(500);
+    }
+
+    .about__image-container {
+        position: static;
+        width: 100%;
+        height: px-to-rem(284);
+        background-image: url("../../images/mobile/image-interactive.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .about__text-container {
+        position: static;
+        width: 100%;
+        min-height: px-to-rem(195);
+        z-index: 3;
+        padding: 0;
+        background-color: $white;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        gap: px-to-rem(24);
+
+        text-align: center;
+    }
 }
 
 @media(max-width: px-to-rem(678)) {

@@ -29,6 +29,7 @@ button {
 
 body {
     max-width: px-to-rem(1440);
+    min-width: px-to-rem(375);
     width: 100vw;
     min-height: 100vh;
     margin: 0 auto;
@@ -83,9 +84,14 @@ main {
 .about,
 .creations {
     margin-bottom: px-to-rem(220);
+
+    h2,
+    h3 {
+        text-transform: uppercase;
+    }
 }
 
-.about {
+.about-wrapper {
     position: relative;
     height: px-to-rem(500);
 }
@@ -97,6 +103,7 @@ main {
     width: 66%;
     height: 100%;
     background-image: url("../images/desktop/image-interactive.jpg");
+    background-repeat: no-repeat;
 }
 
 .about__text-container {
@@ -109,6 +116,7 @@ main {
     padding-top: px-to-rem(96);
     padding-left: px-to-rem(96);
     background-color: $white;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
