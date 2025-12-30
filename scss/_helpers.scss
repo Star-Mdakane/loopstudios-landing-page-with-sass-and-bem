@@ -42,3 +42,9 @@ $spaces: 1 2 3 4 5;
     height: 2px;
     background-color: white;
 }
+
+@mixin flex-padding($y, $x) {
+    display: flex;
+    flex-direction: column;
+    padding: px-to-rem($y) px-to-rem($x);
+}

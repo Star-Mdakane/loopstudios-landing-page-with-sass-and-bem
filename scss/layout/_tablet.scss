@@ -87,6 +87,13 @@
             color: $white;
         }
     }
+
+    main {
+        // display: flex;
+        // flex-direction: column;
+        // padding: px-to-rem(100) px-to-rem(80);
+        @include flex-padding(100, 80);
+    }
 }
 
 @media(max-width: px-to-rem(678)) {

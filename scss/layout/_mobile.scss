@@ -43,6 +43,13 @@
         height: px-to-rem(399);
     }
 
+    main {
+        // display: flex;
+        // flex-direction: column;
+        // padding: px-to-rem(100) px-to-rem(24);
+        @include flex-padding(100, 24);
+    }
+
 
     .text-1 {
         font-family: $font-stack-josefin;
