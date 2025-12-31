@@ -304,6 +304,7 @@ main {
 .creations__title {
   grid-column: 1/2;
   grid-row: 1;
+  text-transform: uppercase;
 }
 .creations__link {
   grid-column: 2/-1;
