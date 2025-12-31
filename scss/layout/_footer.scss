@@ -1,8 +1,45 @@
 footer {
     background-color: $black;
+    padding: 2rem 0;
+}
+
+.footer-wrapper {
+    max-width: px-to-rem(1110);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: end;
+    color: white;
 }
 
 .footer__item {
     width: 1.5rem;
     height: 1.5rem;
+}
+
+.footer a::after {
+    @extend %bottom;
+    background-color: black;
 }
