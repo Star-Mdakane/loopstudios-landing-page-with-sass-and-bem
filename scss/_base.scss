@@ -140,6 +140,13 @@ main {
         border: 1px solid $black;
         display: grid;
         place-content: center;
+        color: black;
+
+        &:hover {
+            background-color: black;
+            color: white;
+            border-color: white;
+        }
     }
 
     &__grid {
@@ -171,7 +178,14 @@ main {
             text-align: start;
             text-transform: uppercase;
         }
+
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
     }
+
+
 }
 
 .creations-wrapper {

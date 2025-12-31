@@ -315,6 +315,12 @@ main {
   border: 1px solid #000;
   display: grid;
   place-content: center;
+  color: black;
+}
+.creations__link:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
 }
 .creations__grid {
   grid-column: 1/-1;
@@ -340,6 +346,10 @@ main {
   width: 70%;
   text-align: start;
   text-transform: uppercase;
+}
+.creations__item:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .creations-wrapper {
