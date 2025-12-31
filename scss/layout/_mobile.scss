@@ -50,6 +50,48 @@
         @include flex-padding(100, 24);
     }
 
+    .footer-wrapper {
+        max-width: px-to-rem(1110);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: px-to-rem(40);
+
+        .header__list {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            gap: 0;
+        }
+    }
+
+    .footer__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: px-to-rem(40);
+    }
+
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .footer__socials {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer__copyright {
+        display: flex;
+        justify-content: center;
+    }
+
 
     .text-1 {
         font-family: $font-stack-josefin;

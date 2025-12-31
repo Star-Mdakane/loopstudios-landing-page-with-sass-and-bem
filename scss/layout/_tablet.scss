@@ -232,6 +232,13 @@
         background-image: url("./../../images/mobile/image-fisheye.jpg");
 
     }
+
+    .footer {
+        .header__list {
+            display: flex;
+            gap: 1rem;
+        }
+    }
 }
 
 @media(max-width: px-to-rem(678)) {

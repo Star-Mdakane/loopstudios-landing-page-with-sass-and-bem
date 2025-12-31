@@ -49,6 +49,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Getting the feel of Sass, powerfull but a lot of depracated wwarning, which will make it less interesting.
 - No one told me that the order of import was very important.
 - Again made the mistake of display none on transition, I need to learn.
+- On my creations section, the see all buttton made me think if I should have done a mobile first design since it moves but as I had already placed it on a grid column, I just moved it to the bottom.
 
 ### Built with
 
