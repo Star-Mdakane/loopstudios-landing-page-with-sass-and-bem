@@ -1,3 +1,11 @@
+@media(max-width: px-to-rem(992)) {
+    .creations__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
 @media(max-width: px-to-rem(768)) {
 
     //    tablet
@@ -95,6 +103,11 @@
         @include flex-padding(100, 80);
     }
 
+    .about,
+    .creations {
+        margin-bottom: px-to-rem(0);
+    }
+
     .about-wrapper {
         position: static;
         display: flex;
@@ -129,12 +142,108 @@
 
         text-align: center;
     }
+
+    .creations {
+        &__title {
+            text-align: center;
+            grid-column: 1 / 1;
+            grid-row: auto;
+        }
+
+        &__link {
+            grid-column: 1 / -1;
+            grid-row: auto;
+            justify-self: center;
+            width: px-to-rem(157);
+            height: px-to-rem(40);
+            border: 1px solid $black;
+            display: grid;
+            place-content: center;
+            margin-top: 2rem;
+        }
+
+        &__grid {
+            grid-column: 1 / -1;
+            grid-row: auto;
+            margin-top: px-to-rem(32);
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        &__item {
+            height: px-to-rem(120);
+            width: 100%;
+            color: $white;
+            display: flex;
+            align-items: end;
+            text-align: start;
+
+            h3 {
+                margin: 2.5rem;
+            }
+        }
+    }
+
+    .creations-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .earth {
+        background-image: url("./../../images/mobile/image-deep-earth.jpg");
+    }
+
+    .arcade {
+        background-image: url("./../../images/mobile/image-night-arcade.jpg");
+
+    }
+
+    .soccer {
+        background-image: url("./../../images/mobile/image-soccer-team.jpg");
+
+    }
+
+    .the-grid {
+        background-image: url("./../../images/mobile/image-grid.jpg");
+
+    }
+
+    .up-above {
+        background-image: url("./../../images/mobile/image-from-above.jpg");
+
+    }
+
+    .borealis {
+        background-image: url("./../../images/mobile/image-pocket-borealis.jpg");
+
+    }
+
+    .curiosity {
+        background-image: url("./../../images/mobile/image-curiosity.jpg");
+
+    }
+
+    .fisheye {
+        background-image: url("./../../images/mobile/image-fisheye.jpg");
+
+    }
 }
 
 @media(max-width: px-to-rem(678)) {
     .text-1 {
         font-family: $font-stack-josefin;
         font-size: px-to-rem(48);
+        line-height: 100%;
+        font-weight: 300;
+    }
+
+    .text-4 {
+        font-family: $font-stack-josefin;
+        font-size: px-to-rem(24);
         line-height: 100%;
         font-weight: 300;
     }
@@ -146,6 +255,12 @@
         padding: 2rem;
         margin-bottom: 6rem;
         text-align: center;
+    }
+
+    .creations__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
 }
